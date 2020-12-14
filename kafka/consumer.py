@@ -11,7 +11,7 @@ settings = {
 
 c = Consumer(settings)
 
-c.subscribe(['oscarini'])
+c.subscribe(['oscar'])
 
 try:
     while True:

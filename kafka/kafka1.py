@@ -9,10 +9,10 @@ def acked(err, msg):
 
 p = Producer({'bootstrap.servers': 'localhost:9092'})
 
+
 try:
-    for val in xrange(1, 1000):
-        p.produce('oscarini', 'myvalue #{0}'
-                  .format(val), callback=acked)
+    for val in range (1, 1000):
+        p.produce('oscar', key='mykey', value='myvalue #{0}'.format(val), callback=acked)
         p.poll(0.5)
 
 except KeyboardInterrupt:
