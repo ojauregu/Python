@@ -6,13 +6,15 @@ Pruebas con diccionarios
 d = dict()
 print(d, type(d))
 
-d2 = {1:"uno",2:"dos",3:"tres"}
+d2 = {"uno":"uno","dos":"dos","tres":"tres"}
 print(d2)
 
-d2[4] = "cuatro"
+d2["cuatro"] = "cuatro"
+
+print(d2["cuatro"])
 
 # Buscar una clave:
-if 4 in d2:
+if "cuatro" in d2:
     print("el 4 esta")
 
 # Recorrer el diccionario:

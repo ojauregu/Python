@@ -11,7 +11,7 @@ p = Producer({'bootstrap.servers': 'localhost:9092'})
 
 
 try:
-    for val in range (1, 1000):
+    for val in range (1, 10):
         p.produce('oscar', key='mykey', value='myvalue #{0}'.format(val), callback=acked)
         p.poll(0.5)
 
