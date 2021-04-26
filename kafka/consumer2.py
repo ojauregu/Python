@@ -2,7 +2,7 @@ from confluent_kafka import Consumer, KafkaError, TopicPartition
 
 settings = {
     'bootstrap.servers': 'localhost:9092',
-    'group.id': 'mygroup3',
+    'group.id': 'mygroup',
     'client.id': 'client-1',
     'enable.auto.commit': False,
     'session.timeout.ms': 6000,

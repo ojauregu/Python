@@ -3,8 +3,6 @@ from confluent_kafka import Consumer, KafkaError, TopicPartition , OFFSET_END, O
 settings = {
     'bootstrap.servers': 'localhost:9092',
     'group.id': 'mygroup',
-
-
     'client.id': 'client-1',
     'enable.auto.commit': True,
     'session.timeout.ms': 6000,
@@ -15,9 +13,9 @@ c = Consumer(settings)
 print(OFFSET_END)
 print(OFFSET_BEGINNING)
 
-c.subscribe(['oscar'])
+c.subscribe(['pruebas'])
 
-tp = TopicPartition('oscar', 0)
+tp = TopicPartition('pruebas', 0)
 c.assign([tp])
 
 print (c.position([tp]))
