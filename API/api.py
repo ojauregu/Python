@@ -16,10 +16,10 @@ def hello():
     name = request.args.get('name')
 
     if name is None:
-        text = 'Heeello!'
+        text = 'Hola desconocido!'
 
     else:
-        text = 'Holaaaaaaa ' + name + '!'
+        text = 'Holaaaaaaa amigooooo' + name + '!'
 
     return jsonify({"message": text})
 
