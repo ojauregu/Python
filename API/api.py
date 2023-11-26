@@ -19,7 +19,7 @@ def hello():
         text = 'Hola desconocido!'
 
     else:
-        text = 'Holaaaaaaa amigooooo' + name + '!'
+        text = 'Holaaaaaaa amigooooo  ' + name + '!'
 
     return jsonify({"message": text})
 
