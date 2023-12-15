@@ -9,9 +9,9 @@ from flask import send_file
 app = Flask(__name__)
 
 @app.route('/my-first-api', methods = ['GET'])
+@app.route('/', methods = ['GET'])
 
 def hello():
-
 
     name = request.args.get('name')
 
